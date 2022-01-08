@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+   // return view('welcome');
+return "Bienvennidos a la pagina principal";
+
+});
+
+route::get('cursos', function (){
+    return "Bienvenidos a la página cursos";
+});
+
+route::get('cursos/{curso}', function($curso){
+    return "Bienvenio al curso: $curso";
 });
