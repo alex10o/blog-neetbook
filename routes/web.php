@@ -27,6 +27,8 @@ Route::get('cursos/create', function () {
     return "En esta página podrás crear un curso";
 });
 
+/*
+
 route::get('cursos/{curso}', function($curso){
     return "Bienvenio al curso: $curso";
 });
@@ -34,4 +36,10 @@ route::get('cursos/{curso}', function($curso){
 Route::get('cursos/{curso}/{categoria}', function ($curso, $categoria) {
     return "Bienvenido al curso $curso, de la categoria $categoria ";
 });
-
+*/
+Route::get('cursos/{curso}/{categoria?}', function ($curso, $categoria = null) {
+    if($categoria)
+    return "Bienvenido al curso $curso, de la categoria $categoria ";
+    else
+    return "Bienvenio al curso: $curso";
+});
