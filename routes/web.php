@@ -23,10 +23,15 @@ route::get('cursos', function (){
     return "Bienvenidos a la página cursos";
 });
 
+Route::get('cursos/create', function () {
+    return "En esta página podrás crear un curso";
+});
+
 route::get('cursos/{curso}', function($curso){
     return "Bienvenio al curso: $curso";
 });
 
-Route::get('cursos/create', function () {
-    return "En esta página podrás crear un curso";
+Route::get('cursos/{curso}/{categoria}', function ($curso, $categoria) {
+    return "Bienvenido al curso $curso, de la categoria $categoria ";
 });
+
