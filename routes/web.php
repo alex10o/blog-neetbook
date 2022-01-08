@@ -26,3 +26,7 @@ route::get('cursos', function (){
 route::get('cursos/{curso}', function($curso){
     return "Bienvenio al curso: $curso";
 });
+
+Route::get('cursos/create', function () {
+    return "En esta página podrás crear un curso";
+});
