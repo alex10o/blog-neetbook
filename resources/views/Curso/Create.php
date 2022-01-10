@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>"En esta página podrás crear un curso"</h1>
 </body>
 </html>
